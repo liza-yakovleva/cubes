@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+   background-color: #333;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  
+  
+}
+
+[class$="square"] {
+  width: 100px;
+  height: 100px;
+  background-color: #e7e7e7;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+  display: flex;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  background-color: #333333;
+  border-radius: 50%;
+  
+}
+.first-square {
+  justify-content: center;
+  align-items: center;
+}
+.second-square {
+  justify-content: space-between;
+}
+.second-square .circle:last-child {
+  align-self: flex-end;
+}
+.third-square {
+   justify-content: space-between;
+}
+.third-square .circle:nth-child(2){
+  align-self: center;
+}
+.third-square .circle:last-child {
+align-self: flex-end;
+}
+.fourth-square {
+   justify-content: space-between;
+   
+}
+.fourth-square .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+.fifth-square {
+  justify-content: space-between;
+
+}
+
+.fifth-square .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fifth-square .column:nth-of-type(2) {
+  justify-content: space-around;
+}
+.sixth-square {
+   justify-content: space-between;
+}
+.sixth-square .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
